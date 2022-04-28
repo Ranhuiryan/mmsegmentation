@@ -105,6 +105,8 @@ venv.bak/
 .mypy_cache/
 
 data
+work_dirs
+checkpoints
 .vscode
 .idea
 
