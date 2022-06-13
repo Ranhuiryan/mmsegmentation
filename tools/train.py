@@ -19,6 +19,7 @@ from mmseg.datasets import build_dataset
 from mmseg.models import build_segmentor
 from mmseg.utils import collect_env, get_root_logger, setup_multi_processes
 
+import datetime
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
@@ -109,6 +110,7 @@ def parse_args():
 
 def main():
     args = parse_args()
+    time_stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
     cfg = Config.fromfile(args.config)
     if args.cfg_options is not None:
@@ -125,7 +127,7 @@ def main():
     elif cfg.get('work_dir', None) is None:
         # use config filename as default work_dir if cfg.work_dir is None
         cfg.work_dir = osp.join('./work_dirs',
-                                osp.splitext(osp.basename(args.config))[0])
+                                time_stamp + "_" + osp.splitext(osp.basename(args.config))[0])
     if args.load_from is not None:
         cfg.load_from = args.load_from
     if args.resume_from is not None:

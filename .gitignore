@@ -116,6 +116,7 @@ checkpoints
 *.log.json
 work_dirs/
 mmseg/.mim
+custom_configs
 
 # Pytorch
 *.pth
