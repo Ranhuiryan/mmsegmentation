@@ -116,6 +116,11 @@ checkpoints
 *.pkl.json
 *.log.json
 work_dirs/
+work_dirs
+checkpoints/
+checkpoints
+custom_configs/
+custom_configs
 mmseg/.mim
 custom_configs
 
