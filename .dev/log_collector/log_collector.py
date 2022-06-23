@@ -110,8 +110,8 @@ def main():
             for key in metrics:
                 if key in log:
                     new_ordered_dict[key] = log[key]
-                else:
-                    new_ordered_dict[key] = None
+                # else:
+                #     new_ordered_dict[key] = None
             val_list[index - 1] = new_ordered_dict
 
         assert len(val_list) >= 1, \

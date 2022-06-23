@@ -1,6 +1,6 @@
 work_dir = '../../work_dirs/mmseg_results_tb_1'
-metrics = ["aAcc", "mAcc", "mIoU", "mDice", "IoU.ground", "Dice.ground", "IoU.fissure", "Dice.fissure", "Acc.ground", "Acc.fissure"]
-important_metric = "aAcc"
+metrics = ["mAcc", "mIoU", "IoU.ground", "IoU.fissure", "Acc.ground", "Acc.fissure"]
+important_metric = "mIoU"
 
 # metric = "aAcc"
 # should not include metric
@@ -11,9 +11,9 @@ log_items = [
     "20220611-224818_pspnet_r50-d8_256x256_80k_irfissure_thumb_60",
     "20220612-005056_pspnet_r50-d8_256x256_80k_irfissure_thermal_60",
     "20220612-151550_pspnet_r50-d8_256x256_80k_irfissure_fusion_60",
-    "20220612-200437_fcn_unet_s5-d16_256x256_40k_irfissure_fusion_60",
-    "20220613-004019_fcn_unet_s5-d16_256x256_40k_irfissure_thermal_60",
-    "20220613-051638_fcn_unet_s5-d16_256x256_40k_irfissure_thumb_60",
+    # "20220612-200437_fcn_unet_s5-d16_256x256_40k_irfissure_fusion_60",
+    # "20220613-004019_fcn_unet_s5-d16_256x256_40k_irfissure_thermal_60",
+    # "20220613-051638_fcn_unet_s5-d16_256x256_40k_irfissure_thumb_60",
     "20220613-132236_upernet_r50_256x256_80k_irfissure_fusion_60",
     "20220613-180512_upernet_r50_256x256_80k_irfissure_thermal_60",
     "20220613-224739_upernet_r50_256x256_80k_irfissure_thumb_60",
