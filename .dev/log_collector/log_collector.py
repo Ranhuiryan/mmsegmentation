@@ -141,11 +141,15 @@ def main():
                     f'best index|'
                     f'{"".join([metric + " last|" for metric in metrics])}'
                     f'last index|last iter num|\n')
-            f.write('|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n')
+            f.write('|:---:|:---:|:---:|:---:|:---:|'
+                    f'{":---:|" * len(metrics) *2 }\n')
             f.writelines(lines_to_write)
 
     print('processed successfully')
 
+# repeat string n times
+def repeat_str(str_, n):
+    return ''.join([str_ for _ in range(n)])
 
 if __name__ == '__main__':
     main()

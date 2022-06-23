@@ -18,7 +18,7 @@ example_config.py:
 # The work directory that contains folders that contains .log.json files.
 work_dir = '../../work_dirs'
 # The metric used to find the best evaluation.
-metric = 'mIoU'
+important_metric = 'mIoU'
 
 # **Don't specify the log_items and ignore_keywords at the same time.**
 # Specify the log files we would like to collect in `log_items`.
@@ -35,8 +35,8 @@ log_items = [
 # ignore_keywords = ['segformer']
 
 # Other log items in .log.json that you want to collect.
-# should not include metric.
-other_info_keys = ["mAcc"]
+# other metrics.
+metrics = ["mAcc"]
 # The output markdown file's name.
 markdown_file ='markdowns/lr_in_trans.json.md'
 # The output json file's name. (optional)

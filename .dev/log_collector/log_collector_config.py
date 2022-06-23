@@ -8,6 +8,8 @@ important_metric = "aAcc"
 
 # specify the log files we would like to collect in `log_items`
 log_items = [
+    "20220611-224818_pspnet_r50-d8_256x256_80k_irfissure_thumb_60",
+    "20220612-005056_pspnet_r50-d8_256x256_80k_irfissure_thermal_60",
     "20220612-151550_pspnet_r50-d8_256x256_80k_irfissure_fusion_60",
     "20220612-200437_fcn_unet_s5-d16_256x256_40k_irfissure_fusion_60",
     "20220613-004019_fcn_unet_s5-d16_256x256_40k_irfissure_thermal_60",
@@ -23,9 +25,7 @@ log_items = [
     "20220620-074334_ocrnet_r50-d8_256x256_80k_b16_irfissure_thumb_60",
     "20220620-131016_upernet_vit-b8_ln_mln_256x256_160k_irfissure_fusion_60",
     "20220621-025047_upernet_vit-b8_ln_mln_256x256_160k_irfissure_thumb_60",
-    "20220621-163021_upernet_vit-b8_ln_mln_256x256_160k_irfissure_thermal_60",
-    "pspnet_r50-d8_256x256_80k_irfissure_thermal_60",
-    "pspnet_r50-d8_256x256_80k_irfissure_thumb_60"
+    "20220621-163021_upernet_vit-b8_ln_mln_256x256_160k_irfissure_thermal_60"
 ]
 # or specify ignore_keywords, then the folders whose name contain
 # `'segformer'` won't be collected
