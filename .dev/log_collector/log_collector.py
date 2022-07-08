@@ -130,18 +130,19 @@ def main():
         lines_to_write = []
         for index, log in enumerate(experiment_info_list, 1):
             lines_to_write.append(
-                f"|{index}|{log['method']}|"
+                f"|{index}|{'_'.join(log['method'].split('_')[1:-1])}|"
+                f"{log['method'].split('_')[-1]}|"
                 f"{''.join([str(log['best eval'][metric])+'|' for metric in metrics])}"
                 f"{log['best eval']['eval_index']}|"
                 f"{''.join([str(log['last eval'][metric])+'|' for metric in metrics])}"
                 f"{log['last eval']['eval_index']}|{log['last_iter']}|\n")
         with open(markdown_file, 'w') as f:
-            f.write(f'|exp_num|method|'
+            f.write(f'|exp_num|method|dataset|'
                     f'{"".join([metric + " best|" for metric in metrics])}'
                     f'best index|'
                     f'{"".join([metric + " last|" for metric in metrics])}'
                     f'last index|last iter num|\n')
-            f.write('|:---:|:---:|:---:|:---:|:---:|'
+            f.write('|:---:|:---:|:---:|:---:|:---:|:---:|'
                     f'{":---:|" * len(metrics) *2 }\n')
             f.writelines(lines_to_write)
 
