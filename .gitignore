@@ -123,6 +123,8 @@ custom_configs/
 custom_configs
 mmseg/.mim
 custom_configs
+wandb
+artifacts
 
 # Pytorch
 *.pth
