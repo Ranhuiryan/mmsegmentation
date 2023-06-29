@@ -115,16 +115,19 @@ checkpoints
 *.pkl
 *.pkl.json
 *.log.json
+*.png
 work_dirs/
 work_dirs
 checkpoints/
 checkpoints
-custom_configs/
-custom_configs
+custom_configs*/
+custom_configs*
 mmseg/.mim
 custom_configs
 wandb
 artifacts
+mmseg/datasets/irfissure.py
+.dev/
 
 # Pytorch
 *.pth
